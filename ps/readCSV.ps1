@@ -1,4 +1,5 @@
-﻿try
+#Reads CSV file
+ try
 {
     $FilePath = "C:\Users\Sairam\desktop\myCsv.csv"
     $headder = @("first_name","last_name","env_type")
