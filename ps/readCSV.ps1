@@ -1,4 +1,5 @@
 #Reads CSV file
+#Author : Sairam
  try
 {
     $FilePath = "C:\Users\Sairam\desktop\myCsv.csv"
