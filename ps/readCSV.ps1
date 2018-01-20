@@ -21,5 +21,6 @@
 }
 catch
 {
+ #write exception to console
  Write-Host $_.Exception.Message
 }
