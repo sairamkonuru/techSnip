@@ -3,3 +3,10 @@ Location: C:\Windows\Microsoft.NET\Framework\v4.0.30319
 Compile:
 /p:DebugSymbols=false /p:DebugType=None to ignore debug information from build output
 MSBuild "C:\Users\Sairam\Desktop\ConsoleApp1\ConsoleApp1.sln" /t:Rebuild /p:Configuration=Release /p:DebugSymbols=false /p:DebugType=None
+
+
+https://stackoverflow.com/questions/31554559/possible-to-stop-generating-ipdb-iobj-files-by-visual-studio-2015
+
+These files are produced when Incremental Link-Time Code Generation (LTCG) is enabled. This is a new feature in Visual C++ 2015.
+If you disable Incremental LTCG, the linker will stop producing these files. But then you lose the benefits of Incremental LTCG.
+To disable Incremental LTCG, modify your project properties: Under Linker => Optimization change "Link Time Code Generation" to something other than "Use Fast Link Time Code Generation (/LTCG:incremental)" (this is the default for Release builds).
