@@ -1,0 +1,5 @@
+Location: C:\Windows\Microsoft.NET\Framework\v4.0.30319
+
+Compile:
+/p:DebugSymbols=false /p:DebugType=None to ignore debug information from build output
+MSBuild "C:\Users\Sairam\Desktop\ConsoleApp1\ConsoleApp1.sln" /t:Rebuild /p:Configuration=Release /p:DebugSymbols=false /p:DebugType=None
